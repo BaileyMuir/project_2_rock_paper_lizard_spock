@@ -1,34 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Castoro&family=Roboto+Slab&display=swap');
 
 /* webpage */
-*{
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 /* targeting every item in the body element */
-body{
+body {
     font-family: Castoro, Roboto-Slab, sans-serif;
 }
 
 /* h1 styling rules */
-h1{
-    text-align: center;
+h1 {
+    text-align: left;
     font-size: 300%;
     font-weight: 400;
-    text-decoration: underline 2px black;
-    margin: 15px;
+    text-decoration: underline 2px rgb(0, 0, 0);
 }
 
 /* symbol-selector style rules */
 .symbol-selector {
-    display: inline;
-    padding: 40px;
+text-align: center;
+}
+
+.symbol {
+    display: inline-block;
 }
 
 /* button selectors styling rules */
 button {
     font-size: 150px;
     border: none;
-    margin: 20px;
+    color: rgb(111 37 193);
 }
+
+/* score board */
