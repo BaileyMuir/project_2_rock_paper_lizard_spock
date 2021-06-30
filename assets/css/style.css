@@ -89,3 +89,9 @@ button {
     right: 90px;
     font-size: 40px;
 }
+
+/* help section/rules */
+
+.identifier {
+    display: inline;
+}
