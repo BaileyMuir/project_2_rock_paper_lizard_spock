@@ -23,6 +23,10 @@ h1 {
 /* symbol-selector style rules */
 .symbol-selector {
 text-align: center;
+margin-top: 40px;
+margin-right: 0px;
+margin-bottom: 40px;
+margin-left: 0px;
 }
 
 .symbol {
@@ -38,3 +42,10 @@ button {
 }
 
 /* score board */
+.score-board {
+    margin: auto;
+    padding: 20px;
+    border: 2px solid black;
+    width: 30%;
+    text-align: center;
+}
