@@ -51,5 +51,39 @@ button {
     padding: 20px;
     border: 2px solid black;
     width: 30%;
+    height: 120px;
     text-align: center;
+    position: relative;
+}
+
+#player {
+    position: absolute;
+    top: 10px;
+    bottom: 0;
+    left: 40px;
+    font-size: 30px;
+}
+
+#computer {
+    position: absolute;
+    top: 10px;
+    bottom: 0;
+    right: 40px;
+    font-size: 30px;
+}
+
+#player-score{
+    position: absolute;
+    top: 50px;
+    bottom: 0;
+    left: 70px;
+    font-size: 40px;
+}
+
+#computer-score{
+    position: absolute;
+    top: 50px;
+    bottom: 0;
+    right: 90px;
+    font-size: 40px;
 }
