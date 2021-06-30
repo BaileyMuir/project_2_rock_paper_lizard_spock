@@ -18,6 +18,10 @@ h1 {
     font-size: 300%;
     font-weight: 400;
     text-decoration: underline 2px rgb(0, 0, 0);
+    margin-top: 10px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 20px;
 }
 
 /* symbol-selector style rules */
