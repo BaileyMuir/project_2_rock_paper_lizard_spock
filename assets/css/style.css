@@ -16,3 +16,13 @@ h1{
     text-decoration: underline 2px black;
     margin: 15px;
 }
+
+.symbol-selector {
+    display: inline;
+}
+
+button {
+    font-size: 150px;
+    border: none;
+    margin: 20px;
+}
