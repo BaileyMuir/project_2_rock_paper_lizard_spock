@@ -1,14 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Castoro&family=Roboto+Slab&display=swap');
 
-
+/* webpage */
 *{
     margin: 0;
     padding: 0;
 }
 
+/* targeting every item in the body element */
 body{
     font-family: Castoro, Roboto-Slab, sans-serif;
 }
+
+/* h1 styling rules */
 h1{
     text-align: center;
     font-size: 300%;
@@ -17,10 +20,12 @@ h1{
     margin: 15px;
 }
 
+/* symbol-selector style rules */
 .symbol-selector {
     display: inline;
 }
 
+/* button selectors styling rules */
 button {
     font-size: 150px;
     border: none;
