@@ -23,6 +23,7 @@ h1{
 /* symbol-selector style rules */
 .symbol-selector {
     display: inline;
+    padding: 40px;
 }
 
 /* button selectors styling rules */
