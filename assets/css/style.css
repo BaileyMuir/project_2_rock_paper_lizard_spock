@@ -95,6 +95,14 @@ button {
     padding-left: 20px;
 }
 
+#help-sheet h2 {
+    text-align: center;
+    padding: 20px 10px 10px 20px;
+    font-size: 40px;
+    font-weight: 300;
+    text-decoration: underline 1px rgb(0, 0, 0);
+}
+
 #help-sheet div {
     margin: 2px;
     width: 19.8%;
@@ -103,4 +111,15 @@ button {
     border: 2px solid rgb(0, 0, 0);
     text-align: center;
     display: inline-grid;
+}
+
+#help-sheet h3 {
+    padding-top: 10px;
+    text-decoration: underline 1px rgb(0, 0, 0);
+    font-size: 30px;
+    font-weight: 400;
+}
+
+#help-sheet p {
+    font-size: 20px;
 }
