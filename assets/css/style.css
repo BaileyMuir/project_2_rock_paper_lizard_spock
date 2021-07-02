@@ -91,7 +91,16 @@ button {
 }
 
 /* help section/rules */
+#help-sheet {
+    padding-left: 20px;
+}
 
-.identifier {
-    display: inline;
+#help-sheet div {
+    margin: 2px;
+    width: 19.8%;
+    height: 200px;
+    float: left;
+    border: 2px solid rgb(0, 0, 0);
+    text-align: center;
+    display: inline-grid;
 }
