@@ -28,8 +28,9 @@ h1 {
 #prompt {
     text-align: center;
     font-weight: 400;
-    font-size: 25px;
+    font-size: 30px;
     padding: 10px;
+    text-decoration: underline 2px rgb(0, 0, 0);
 }
 
 /* symbol-selector style rules */
@@ -51,6 +52,17 @@ button {
     font-size: 150px;
     border: none;
     color: rgb(111 37 193);
+}
+
+/* outcome section */
+#outcome-result {
+    height: 50px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 30px;
+    position: relative;
+    margin: 20px;
+    padding: 3%;
 }
 
 /* score board */
