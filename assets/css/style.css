@@ -24,6 +24,14 @@ h1 {
     margin-left: 20px;
 }
 
+/* prompt style rules */
+#prompt {
+    text-align: center;
+    font-weight: 400;
+    font-size: 25px;
+    padding: 10px;
+}
+
 /* symbol-selector style rules */
 .symbol-selector {
 text-align: center;
@@ -93,6 +101,7 @@ button {
 /* help section/rules */
 #help-sheet {
     padding-left: 20px;
+    height: 450px;
 }
 
 #help-sheet h2 {
@@ -122,4 +131,25 @@ button {
 
 #help-sheet p {
     font-size: 20px;
+}
+
+/* footer section */
+footer {
+    height: 200px;
+    margin: 10px;
+    padding: 10px;
+}
+
+#contact-us{
+    text-align: center;
+}
+
+#contact-us > li {
+    display: inline-block;
+    padding: 10px;
+    font-size: 30px;
+}
+
+#contact-us i {
+    color: black;
 }
