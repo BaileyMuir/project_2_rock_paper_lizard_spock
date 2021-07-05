@@ -23,7 +23,7 @@ h1 {
     text-align: left;
     font-size: 300%;
     font-weight: 400;
-    text-decoration: underline 2px rgb(0, 0, 0);
+    text-decoration: underline rgb(0, 0, 0);
     margin-top: 10px;
     margin-right: 0px;
     margin-bottom: 0px;
@@ -36,7 +36,7 @@ h1 {
     font-weight: 400;
     font-size: 30px;
     padding: 10px;
-    text-decoration: underline 2px rgb(0, 0, 0);
+    text-decoration: underline rgb(0, 0, 0);
 }
 
 .symbol-selector {
@@ -132,7 +132,7 @@ button {
     padding: 20px 10px 10px 20px;
     font-size: 40px;
     font-weight: 300;
-    text-decoration: underline 1px rgb(0, 0, 0);
+    text-decoration: underline rgb(0, 0, 0);
 }
 
 #help-sheet div {
@@ -147,7 +147,7 @@ button {
 
 #help-sheet h3 {
     padding-top: 10px;
-    text-decoration: underline 1px rgb(0, 0, 0);
+    text-decoration: underline rgb(0, 0, 0);
     font-size: 30px;
     font-weight: 400;
 }
