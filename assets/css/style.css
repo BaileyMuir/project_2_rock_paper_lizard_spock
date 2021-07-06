@@ -284,3 +284,69 @@ footer {
         font-size: 21px;
     }
 }
+
+/*screens sized min-width 320px to max-screen width (767px) */
+
+@media screen and (max-width: 767px) {
+
+    header {
+        height: 40px;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    #prompt {
+        font-size: 17px;
+    }
+
+    .symbol {
+        display: unset;
+        padding: 10px;
+    }
+
+    button {
+        font-size: 80px;
+    }
+        
+
+    #outcome-result {
+        font-size: 14px;
+        margin: 0;
+    }
+
+    #player {
+        left: 15px;
+        font-size: 15px;
+    }
+
+    #computer {
+        right: 11px;
+        font-size: 15px;
+    }
+
+    #player-score {
+        top: 30px;
+        left: 25px;
+        font-size: 35px;
+    }
+
+    #computer-score {
+        top: 30px;
+        right: 25px;
+        font-size: 35px;
+    }
+
+    #help-sheet div {
+        width: 80%;
+        height: 150px;
+    }
+    #help-sheet h2 {
+        width: fit-content;
+    }
+
+    p {
+        font-size: 15px;
+    }
+}
