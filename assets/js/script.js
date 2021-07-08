@@ -18,25 +18,91 @@ function computer_Selection() {
     console.log(computer_Options[number_Generator])
 }
 
-computer_Selection()
-
+function game(player_Choice){
+    let computer_Choice = computer_Selection();
+    switch('player_Choice' + 'computer_Choice'){
+        case 'rockscissors':
+        case 'rocklizard':
+            console.log(win);
+            break;
+        case 'paperrock':
+            console.log(win);
+            break;
+        case 'paperspock':
+            console.log(win);
+            break;
+        case 'scissorspaper':
+            console.log(win);
+            break;
+        case 'scissorslizard':
+            console.log(win);
+            break;
+        case 'lizardspock':
+            console.log(win);
+            break;
+        case 'lizardpaper':
+            console.log(win);
+            break;
+        case 'spockrock':
+            console.log(win);
+            break;
+        case 'spockscissors':
+            console.log(win);
+            break;
+        case 'scissorsrock':
+        case 'lizardrock':
+            console.log(loose);
+            break;
+        case 'rockpaper':
+            console.log(loose);
+            break;
+        case 'spockpaper':
+            console.log(loose);
+            break;
+        case 'paperscissors':
+            console.log(loose);
+            break;
+        case 'lizardscissors':
+            console.log(loose);
+            break;
+        case 'spocklizard':
+            console.log(loose);
+            break;
+        case 'paperlizard':
+            console.log(loose);
+            break;
+        case 'rockspock':
+            console.log(loose);
+            break;
+        case 'scissorsspock':
+            console.log(loose);
+            break;
+        case 'rockrrock':
+        case 'sissorssissors':
+        case 'paperpaper':
+        case 'lizardlizard':
+        case 'spockspock':
+            console.log(draw);
+            break;
+    }
+}
 
 div_rock_selector.addEventListener('click', function() {
-    console.log(rock);
+    game(rock);
 })
 
 div_paper_selector.addEventListener('click', function() {
-    console.log(paper);
+    game(paper);
 })
 
 div_scissors_selector.addEventListener('click', function() {
-    console.log(scissors);
+    game(scissors);
 })
 
 div_lizard_selector.addEventListener('click', function() {
-    console.log(lizard);
+    game(lizard);
 })
 
 div_spock_selector.addEventListener('click', function() {
-    console.log(spock);
+    game(spock);
 })
