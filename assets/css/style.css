@@ -57,6 +57,8 @@ button {
     font-size: 150px;
     border: none;
     color: rgb(111 37 193);
+    padding: 20px;
+    background: none;
 }
 
 /* outcome section */
