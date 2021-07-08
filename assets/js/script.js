@@ -24,59 +24,59 @@ function game(player_Choice) {
     switch(`player_Choice` + `computer_Choice`){
         case 'rockscissors':
         case 'rocklizard':
-            rock(player_Choice, computer_Choice)
+            rock_win(player_Choice, computer_Choice)
             break;
         case 'paperrock':
-            rock(player_Choice, computer_Choice)
+            paperrock_win(player_Choice, computer_Choice)
             break;
         case 'paperspock':
-            rock(player_Choice, computer_Choice)
+            paperspock_win(player_Choice, computer_Choice)
             break;
         case 'scissorspaper':
-            rock(player_Choice, computer_Choice)
+            scissorspaper_win(player_Choice, computer_Choice)
             break;
         case 'scissorslizard':
-            rock(player_Choice, computer_Choice)
+            scissorslizard_win(player_Choice, computer_Choice)
             break;
         case 'lizardspock':
-            rock(player_Choice, computer_Choice)
+            lizardspock_win(player_Choice, computer_Choice)
             break;
         case 'lizardpaper':
-            rock(player_Choice, computer_Choice)
+            lizardpaper_win(player_Choice, computer_Choice)
             break;
         case 'spockrock':
-            rock(player_Choice, computer_Choice)
+            spockrock_win(player_Choice, computer_Choice)
             break;
         case 'spockscissors':
-            rock(player_Choice, computer_Choice)
+            spockscissors_win(player_Choice, computer_Choice)
             break;
         case 'scissorsrock':
         case 'lizardrock':
-            rock(player_Choice, computer_Choice)
+            rock_loss(player_Choice, computer_Choice)
             break;
         case 'rockpaper':
-            rock(player_Choice, computer_Choice)
+            rockpaper_loss(player_Choice, computer_Choice)
             break;
         case 'spockpaper':
-            rock(player_Choice, computer_Choice)
+            spockpaper_loss(player_Choice, computer_Choice)
             break;
         case 'paperscissors':
-            rock(player_Choice, computer_Choice)
+            paperscissors_loss(player_Choice, computer_Choice)
             break;
         case 'lizardscissors':
-            rock(player_Choice, computer_Choice)
+            lizardscissors_loss(player_Choice, computer_Choice)
             break;
         case 'spocklizard':
-            rock(player_Choice, computer_Choice)
+            spocklizard_loss(player_Choice, computer_Choice)
             break;
         case 'paperlizard':
-            paperlizard(player_Choice, computer_Choice)
+            paperlizard_loss(player_Choice, computer_Choice)
             break;
         case 'rockspock':
-            rockspock(player_Choice, computer_Choice)
+            rockspock_loss(player_Choice, computer_Choice)
             break;
         case 'scissorsspock':
-            scissorsspock(player_Choice, computer_Choice)
+            scissorsspock_loss(player_Choice, computer_Choice)
             break;
         case 'rockrrock':
         case 'sissorssissors':
