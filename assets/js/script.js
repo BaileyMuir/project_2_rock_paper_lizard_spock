@@ -87,22 +87,26 @@ function game(player_Choice){
     }
 }
 
-div_rock_selector.addEventListener('click', function() {
-    game(rock);
-})
+function main(){
+    div_rock_selector.addEventListener('click', function() {
+        game("rock");
+    })
+    
+    div_paper_selector.addEventListener('click', function() {
+        game("paper");
+    })
+    
+    div_scissors_selector.addEventListener('click', function() {
+        game("scissors");
+    })
+    
+    div_lizard_selector.addEventListener('click', function() {
+        game("lizard");
+    })
+    
+    div_spock_selector.addEventListener('click', function() {
+        game("spock");
+    })
+}
 
-div_paper_selector.addEventListener('click', function() {
-    game(paper);
-})
-
-div_scissors_selector.addEventListener('click', function() {
-    game(scissors);
-})
-
-div_lizard_selector.addEventListener('click', function() {
-    game(lizard);
-})
-
-div_spock_selector.addEventListener('click', function() {
-    game(spock);
-})
+main()
