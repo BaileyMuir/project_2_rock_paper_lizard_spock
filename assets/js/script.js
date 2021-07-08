@@ -16,73 +16,74 @@ function computer_Selection() {
     let computer_Options = ['rock', 'paper', 'scissors', 'lizard', 'spock'];
     let number_Generator = Math.floor(Math.random() * 5);
     console.log(computer_Options[number_Generator])
+    return computer_Options[number_Generator]
 }
 
-function game(player_Choice){
+function game(player_Choice) {
     let computer_Choice = computer_Selection();
-    switch('player_Choice' + 'computer_Choice'){
+    switch(`player_Choice` + `computer_Choice`){
         case 'rockscissors':
         case 'rocklizard':
-            console.log(win);
+            rock(player_Choice, computer_Choice)
             break;
         case 'paperrock':
-            console.log(win);
+            rock(player_Choice, computer_Choice)
             break;
         case 'paperspock':
-            console.log(win);
+            rock(player_Choice, computer_Choice)
             break;
         case 'scissorspaper':
-            console.log(win);
+            rock(player_Choice, computer_Choice)
             break;
         case 'scissorslizard':
-            console.log(win);
+            rock(player_Choice, computer_Choice)
             break;
         case 'lizardspock':
-            console.log(win);
+            rock(player_Choice, computer_Choice)
             break;
         case 'lizardpaper':
-            console.log(win);
+            rock(player_Choice, computer_Choice)
             break;
         case 'spockrock':
-            console.log(win);
+            rock(player_Choice, computer_Choice)
             break;
         case 'spockscissors':
-            console.log(win);
+            rock(player_Choice, computer_Choice)
             break;
         case 'scissorsrock':
         case 'lizardrock':
-            console.log(loose);
+            rock(player_Choice, computer_Choice)
             break;
         case 'rockpaper':
-            console.log(loose);
+            rock(player_Choice, computer_Choice)
             break;
         case 'spockpaper':
-            console.log(loose);
+            rock(player_Choice, computer_Choice)
             break;
         case 'paperscissors':
-            console.log(loose);
+            rock(player_Choice, computer_Choice)
             break;
         case 'lizardscissors':
-            console.log(loose);
+            rock(player_Choice, computer_Choice)
             break;
         case 'spocklizard':
-            console.log(loose);
+            rock(player_Choice, computer_Choice)
             break;
         case 'paperlizard':
-            console.log(loose);
+            paperlizard(player_Choice, computer_Choice)
             break;
         case 'rockspock':
-            console.log(loose);
+            rockspock(player_Choice, computer_Choice)
             break;
         case 'scissorsspock':
-            console.log(loose);
+            scissorsspock(player_Choice, computer_Choice)
             break;
         case 'rockrrock':
         case 'sissorssissors':
         case 'paperpaper':
         case 'lizardlizard':
         case 'spockspock':
-            console.log(draw);
+            draw(player_Choice, computer_Choice)
             break;
     }
 }
@@ -90,22 +91,27 @@ function game(player_Choice){
 function main(){
     div_rock_selector.addEventListener('click', function() {
         game("rock");
+        console.log("rock")
     })
     
     div_paper_selector.addEventListener('click', function() {
         game("paper");
+        console.log("paper")
     })
     
     div_scissors_selector.addEventListener('click', function() {
         game("scissors");
+        console.log("scissors")
     })
     
     div_lizard_selector.addEventListener('click', function() {
         game("lizard");
+        console.log("lizard")
     })
     
     div_spock_selector.addEventListener('click', function() {
         game("spock");
+        console.log("spock")
     })
 }
 
