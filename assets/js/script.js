@@ -1,4 +1,3 @@
-/casch the dom/ 
 let player_score = 0;
 let computer_score = 0;
 let span_player_score = document.getElementById("player-score");
@@ -11,17 +10,145 @@ let div_scissors_selector = document.getElementById("scissors");
 let div_lizard_selector = document.getElementById("lizard");
 let div_spock_selector = document.getElementById("spock");
 
-/number generator/ 
 function computer_Selection() {
     let computer_Options = ['rock', 'paper', 'scissors', 'lizard', 'spock'];
     let number_Generator = Math.floor(Math.random() * 5);
-    console.log(computer_Options[number_Generator])
     return computer_Options[number_Generator]
 }
 
+function rock_win(player_Choice, computer_Choice) {
+    player_score++;
+    span_player_score.innerHTML = player_score;
+    span_computer_score.innerHTML = computer_score;
+    outcome_result_h4.innerHTML = player_Choice + " crushes " + computer_Choice +", you win!.";
+    }
+    
+    function paperrock_win(player_Choice, computer_Choice) {
+    player_score++;
+    span_player_score.innerHTML = player_score;
+    span_computer_score.innerHTML = computer_score;
+    outcome_result_h4.innerHTML = player_Choice + " covers " + computer_Choice +", you win!.";
+    }
+             
+    function paperspock_win(player_Choice, computer_Choice) {
+    player_score++;
+    span_player_score.innerHTML = player_score;
+    span_computer_score.innerHTML = computer_score;
+    outcome_result_h4.innerHTML = player_Choice + " disproves " + computer_Choice +", you win!.";
+    }
+    
+    function scissorspaper_win(player_Choice, computer_Choice) {
+    player_score++;
+    span_player_score.innerHTML = player_score;
+    span_computer_score.innerHTML = computer_score;
+    outcome_result_h4.innerHTML = player_Choice + " cuts " + computer_Choice +", you win!.";
+    }
+    
+    function scissorslizard_win(player_Choice, computer_Choice) {
+    player_score++;
+    span_player_score.innerHTML = player_score;
+    span_computer_score.innerHTML = computer_score;
+    outcome_result_h4.innerHTML = player_Choice + " decapitates " + computer_Choice +", you win!.";
+    }    
+    
+    function lizardspock_win(player_Choice, computer_Choice) {
+    player_score++;
+    span_player_score.innerHTML = player_score;
+    span_computer_score.innerHTML = computer_score;
+    outcome_result_h4.innerHTML = player_Choice + " poisons " + computer_Choice +", you win!.";
+    }     
+    
+    function lizardpaper_win(player_Choice, computer_Choice) {
+    player_score++;
+    span_player_score.innerHTML = player_score;
+    span_computer_score.innerHTML = computer_score;
+    outcome_result_h4.innerHTML = player_Choice + " eats " + computer_Choice +", you win!.";
+    }       
+    
+    function spockrock_win(player_Choice, computer_Choice) {
+    player_score++;
+    span_player_score.innerHTML = player_score;
+    span_computer_score.innerHTML = computer_score;
+    outcome_result_h4.innerHTML = player_Choice + " vaporizes " + computer_Choice +", you win!.";
+    }       
+    
+    function spockscissors_win(player_Choice, computer_Choice) {
+    player_score++;
+    span_player_score.innerHTML = player_score;
+    span_computer_score.innerHTML = computer_score;
+    outcome_result_h4.innerHTML = player_Choice + " smashes " + computer_Choice +", you win!.";
+    }  
+    
+    function rock_loss(player_Choice, computer_Choice) {
+    computer_score++;
+    span_player_score.innerHTML = player_score;
+    span_computer_score.innerHTML = computer_score;
+    outcome_result_h4.innerHTML = player_Choice + " was crushed by " + computer_Choice +", you loose!.";
+    }
+    
+    function rockpaper_loss(player_Choice, computer_Choice) {
+    computer_score++;
+    span_player_score.innerHTML = player_score;
+    span_computer_score.innerHTML = computer_score;
+    outcome_result_h4.innerHTML = player_Choice + " was covered by " + computer_Choice +", you loose!.";
+    }
+         
+    function spockpaper_loss(player_Choice, computer_Choice) {
+    computer_score++;
+    span_player_score.innerHTML = player_score;
+    span_computer_score.innerHTML = computer_score;
+    outcome_result_h4.innerHTML = player_Choice + " was disproved by " + computer_Choice +", you loose!.";
+    }     
+     
+    function paperscissors_loss(player_Choice, computer_Choice) {
+    computer_score++;
+    span_player_score.innerHTML = player_score;
+    span_computer_score.innerHTML = computer_score;
+    outcome_result_h4.innerHTML = player_Choice + " was cut by " + computer_Choice +", you loose!.";
+    }     
+    
+    function lizardscissors_loss(player_Choice, computer_Choice) {
+    computer_score++;
+    span_player_score.innerHTML = player_score;
+    span_computer_score.innerHTML = computer_score;
+    outcome_result_h4.innerHTML = player_Choice + " was decapitated by " + computer_Choice +", you loose!.";
+    }     
+    
+    function spocklizard_loss(player_Choice, computer_Choice) {
+    computer_score++;
+    span_player_score.innerHTML = player_score;
+    span_computer_score.innerHTML = computer_score;
+    outcome_result_h4.innerHTML = player_Choice + " was poisoned by " + computer_Choice +", you loose!.";
+    }       
+    
+    function paperlizard_loss(player_Choice, computer_Choice) {
+    computer_score++;
+    span_player_score.innerHTML = player_score;
+    span_computer_score.innerHTML = computer_score;
+    outcome_result_h4.innerHTML = player_Choice + " was eaten by " + computer_Choice +", you loose!.";
+    }       
+    
+    function rockspock_loss(player_Choice, computer_Choice) {
+    computer_score++;
+    span_player_score.innerHTML = player_score;
+    span_computer_score.innerHTML = computer_score;
+    outcome_result_h4.innerHTML = player_Choice + " was vaporized by " + computer_Choice +", you loose!.";
+    }         
+    
+    function scissorsspock_loss(player_Choice, computer_Choice) {
+    computer_score++;
+    span_player_score.innerHTML = player_score;
+    span_computer_score.innerHTML = computer_score;
+    outcome_result_h4.innerHTML = player_Choice + " was smashed by " + computer_Choice +", you loose!.";
+    }          
+    
+    function draw(player_Choice, computer_Choice) {
+    outcome_result_h4.innerHTML = player_Choice + " cancels out " + computer_Choice +", its a draw!.";
+    }
+
 function game(player_Choice) {
     let computer_Choice = computer_Selection();
-    switch(`player_Choice` + `computer_Choice`){
+    switch(player_Choice + computer_Choice){
         case 'rockscissors':
         case 'rocklizard':
             rock_win(player_Choice, computer_Choice);
@@ -91,27 +218,22 @@ function game(player_Choice) {
 function main(){
     div_rock_selector.addEventListener('click', function() {
         game("rock");
-        console.log("rock");
     })
     
     div_paper_selector.addEventListener('click', function() {
         game("paper");
-        console.log("paper");
     })
     
     div_scissors_selector.addEventListener('click', function() {
         game("scissors");
-        console.log("scissors");
     })
     
     div_lizard_selector.addEventListener('click', function() {
         game("lizard");
-        console.log("lizard");
     })
     
     div_spock_selector.addEventListener('click', function() {
         game("spock");
-        console.log("spock");
     });
 }
 
