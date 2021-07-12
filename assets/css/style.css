@@ -10,6 +10,7 @@
 /* targeting every item in the body element */
 body {
     font-family: Castoro, Roboto-Slab, sans-serif;
+    background: springgreen;
 }
 
 /* header styling rules */
