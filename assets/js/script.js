@@ -4,7 +4,6 @@ let player_score = 0;
 let computer_score = 0;
 let span_player_score = document.getElementById("player-score");
 let span_computer_score = document.getElementById("computer-score");
-let div_score_board = document.querySelector(".score-board");
 let outcome_result_h4 = document.querySelector("#outcome-result > h4");
 let div_rock_selector = document.getElementById("rock");
 let div_paper_selector = document.getElementById("paper");
@@ -15,19 +14,19 @@ let div_spock_selector = document.getElementById("spock");
 function main(){
     div_rock_selector.addEventListener('click', function() {
         game("rock");
-    })
+    });
     
     div_paper_selector.addEventListener('click', function() {
         game("paper");
-    })
+    });
     
     div_scissors_selector.addEventListener('click', function() {
         game("scissors");
-    })
+    });
     
     div_lizard_selector.addEventListener('click', function() {
         game("lizard");
-    })
+    });
     
     div_spock_selector.addEventListener('click', function() {
         game("spock");
