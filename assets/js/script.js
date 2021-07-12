@@ -1,5 +1,5 @@
 /*jshint esversion: 6 */
-
+// cache the doms to increase load-up spead
 let player_score = 0;
 let computer_score = 0;
 let span_player_score = document.getElementById("player-score");
@@ -11,6 +11,7 @@ let div_scissors_selector = document.getElementById("scissors");
 let div_lizard_selector = document.getElementById("lizard");
 let div_spock_selector = document.getElementById("spock");
 
+// appon pushing one of the buttons selects one of the game functions to allow for a compareson with the computers
 function main(){
     div_rock_selector.addEventListener('click', function() {
         game("rock");
@@ -35,12 +36,14 @@ function main(){
 
 main();
 
+// number generator which produces one of the symbol options
 function computer_Selection() {
     let computer_Options = ['rock', 'paper', 'scissors', 'lizard', 'spock'];
     let number_Generator = Math.floor(Math.random() * 5);
     return computer_Options[number_Generator];
 }
 
+// compares the user and computers choice and links to relevant function
 function game(player_Choice) {
     let computer_Choice = computer_Selection();
     switch(player_Choice + computer_Choice){
@@ -110,6 +113,7 @@ function game(player_Choice) {
     }
 }
 
+// adds a point to everytime the player wins and displays a message
 function rock_win(player_Choice, computer_Choice) {
     player_score++;
     span_player_score.innerHTML = player_score;
@@ -172,7 +176,8 @@ function rock_win(player_Choice, computer_Choice) {
     span_computer_score.innerHTML = computer_score;
     outcome_result_h4.innerHTML = player_Choice + " smashes " + computer_Choice +", you win!.";
     }  
-    
+
+    // adds a point to everytime the computers wins and displays a message
     function rock_loss(player_Choice, computer_Choice) {
     computer_score++;
     span_player_score.innerHTML = player_score;
@@ -236,6 +241,7 @@ function rock_win(player_Choice, computer_Choice) {
     outcome_result_h4.innerHTML = player_Choice + " was smashed by " + computer_Choice +", you loose!.";
     }          
     
+    // adds a message whenever theres a draw
     function draw(player_Choice, computer_Choice) {
     outcome_result_h4.innerHTML = player_Choice + " cancels out " + computer_Choice +", its a draw!.";
     }
