@@ -38,7 +38,7 @@ I tested it on chrome, Microsoft edge and firefox to see how it would work on po
 I also used the w3c site to check the HTML and CSS as I went through my development process and jshint for the javascript.
 I also asked a few friends to try the game and report any issues they found.
 
-## #UX
+## UX
 
 ### Business goals
 - This website aims to provide the user with a fun and interactive platform to play rock paper lizard spock.
