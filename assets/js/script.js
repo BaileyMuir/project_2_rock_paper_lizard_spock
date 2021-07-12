@@ -1,3 +1,5 @@
+/*jshint esversion: 6 */
+
 let player_score = 0;
 let computer_score = 0;
 let span_player_score = document.getElementById("player-score");
@@ -37,7 +39,7 @@ main();
 function computer_Selection() {
     let computer_Options = ['rock', 'paper', 'scissors', 'lizard', 'spock'];
     let number_Generator = Math.floor(Math.random() * 5);
-    return computer_Options[number_Generator]
+    return computer_Options[number_Generator];
 }
 
 function game(player_Choice) {
