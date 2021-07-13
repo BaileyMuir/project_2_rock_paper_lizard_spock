@@ -78,7 +78,7 @@ First, I used Wireframe to provide a basic template of my website. This acks to 
 Then I used CSS actually to style the elements to look like I planned.
 
 ## Wireframe
-![Wireframe](assets/media-reedme/wireframe.png)
+![Wireframe](https://github.com/BaileyMuir/project_2_rock_paper_lizard_spock/blob/master/assets/images/wireframe.png)
 
 ## Bugs/Fixes
 one bug was that my javascript had an unused function and missing semicolons, but it was an easy thing to resolve with the help of jshint.
@@ -89,7 +89,7 @@ As for the CSS, I had an issue with text-decoration as I didn't realise that you
 
 ## Error warning
 
-![Error](assets/media-reedme/errorimage.png)
+![Error](https://github.com/BaileyMuir/project_2_rock_paper_lizard_spock/blob/master/assets/images/errorimage.png)
 the only issues in js are Metrics
 There are 27 functions in this file.
 
@@ -151,4 +151,4 @@ For help with coding, I watched https://www.youtube.com/watch?v=qWPtKtYEsN4 and 
 - Different levels of difficulty so that returning users will have more aspects to play with.
 
 ## Finished project - screenshots
-![Screenshot](assets/media-reedme/completedgame.png)
+![Screenshot](https://github.com/BaileyMuir/project_2_rock_paper_lizard_spock/blob/master/assets/images/completedgame.png)
